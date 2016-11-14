@@ -41,7 +41,7 @@ new Vue({
 });
 ```
 
-Access an instace of your underlying FeathersJS appliction.
+Access an instace of your underlying FeathersJS application.
 ```
 $vm.$api.services('users').create({ name: 'Cody Mercer' })
 ```
