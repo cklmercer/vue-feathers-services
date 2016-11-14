@@ -1,11 +1,11 @@
+// Execution starts here.
 function plugin(Vue, feathers)  {
-
     // Only install the plugin once.
     if (plugin.installed) {
         return
     }
 
-    // Access underlying feathers client.
+    // Bind access to underlying FeathersJS client into all vm.
     Object.defineProperty(Vue.prototype, '$api', {
         get() {
             return feathers
