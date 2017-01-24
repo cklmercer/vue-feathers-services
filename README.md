@@ -10,7 +10,7 @@ npm install vue-feathers-services
 ```
 
 *Use withing project*
-```vue
+```javascript
 import Vue from 'vue'
 import VueFeathers from 'vue-feathers-services'
 
@@ -23,7 +23,7 @@ Vue.use(VueFeathers, app)
 
 ## Usage
 Add a "services" option to components that need to access your FeathersJS services.
-```vue
+```javascript
 new Vue({
     services: {
         userService: 'users'
