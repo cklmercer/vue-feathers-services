@@ -5,12 +5,12 @@ VueJS plugin to simplify FeathersJS service usage within components.
 ## Installation
 
 *Install via NPM (or better yet.. use Yarn)*
-```
+```bash
 npm install vue-feathers-services
 ```
 
 *Use withing project*
-```
+```vue
 import Vue from 'vue'
 import VueFeathers from 'vue-feathers-services'
 
@@ -23,7 +23,7 @@ Vue.use(VueFeathers, app)
 
 ## Usage
 Add a "services" option to components that need to access your FeathersJS services.
-```
+```vue
 new Vue({
     services: {
         userService: 'users'
@@ -42,7 +42,7 @@ new Vue({
 ```
 
 Access an instace of your underlying FeathersJS application.
-```
+```javascript
 $vm.$api.services('users').create({ name: 'Cody Mercer' })
 ```
 
